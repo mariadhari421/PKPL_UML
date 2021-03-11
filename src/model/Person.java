@@ -20,10 +20,10 @@ public abstract class Person {
             System.out.println("Nama tidak boleh kosong");
             return;
         }
-        char check;
+        String check;
         boolean failed = false;
         for (int i = 0; i < nama.length()-1; i++) {
-            check = nama.charAt(i);
+            check = nama.substring(i, i+1);
             try {
                 int value = Integer.valueOf(check);
                 failed = true;

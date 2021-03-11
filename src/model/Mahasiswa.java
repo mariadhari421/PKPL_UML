@@ -9,9 +9,8 @@ public class Mahasiswa extends Person {
     private String nim;
     KRS krs = new KRS("1");
     public Mahasiswa(String nama, String nim){
-        this.nim = nim;
-        this.nama = nama;
-        
+        this.setNama(nama);
+        this.setNim(nim);
     }
     public Mahasiswa(){
 
