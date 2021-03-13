@@ -82,4 +82,10 @@ public class MataKuliah {
             System.out.println("Class data pengampu harus class Dosen");
         }
     }
+    public void showMatakuliah() {
+        System.out.println("Nama\t\t: " + this.namaMatakuliah);
+        System.out.println("Semester\t: " + this.semester);
+        System.out.println("SKS\t\t: " + this.sks);
+        System.out.println("Pengampu\t: " + this.pengampu.getNama());
+    }
 }
