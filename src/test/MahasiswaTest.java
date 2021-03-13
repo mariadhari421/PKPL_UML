@@ -12,6 +12,7 @@ public class MahasiswaTest {
         testCase3();
         testCase4();
         testCase5();
+        testCase6();
     }
     public static void testCase1() {
         /**
@@ -51,14 +52,21 @@ public class MahasiswaTest {
          *  dengan parameter nim bukan angka
          *  dan panjang karakter bukan 7
          */
-        mahasiswa = new Mahasiswa("Mar'i Adhari", "19050167");
-        mahasiswa = new Mahasiswa("Mar'i Adhari", "AAAAAAA");
+        mahasiswa = new Mahasiswa("Mar i Adhari", "19050167");
+        mahasiswa = new Mahasiswa("Mar i Adhari", "AAAAAAA");
     }
     public static void testCase5() {
         /**
          *  Membuat instansiasi objek mahasiswa dengan parameter
          *  nama terdapat angka
          */
-        mahasiswa = new Mahasiswa("Mar'i 123", "1905016");
+        mahasiswa = new Mahasiswa("Mar i 123", "1905016");
+    }
+    public static void testCase6() {
+        /**
+         *  Membuat instansiasi objek mahasiswa dengan parameter
+         *  nama terdapat karakter bukan huruf
+         */
+        mahasiswa = new Mahasiswa("Mar'i Adhari", "1905016");
     }
 }

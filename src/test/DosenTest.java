@@ -7,11 +7,12 @@ import model.Dosen;
 public class DosenTest {
     public static Dosen dosen; 
     public static void main(String[] args) {
-        // testCase1();
-        // testCase2();
+        testCase1();
+        testCase2();
         testCase3();
-        // testCase4();
-        // testCase5();
+        testCase4();
+        testCase5();
+        testCase6();
     }
     public static void testCase1(){
         //membuat instansiasi objek dosen dengan parameter string kosong
@@ -29,9 +30,9 @@ public class DosenTest {
             *   dengan parameter nidn bukan angka
             *   dan panjang karakter bukan 10
             */
-        dosen = new Dosen("nidn", "Mar'i Adhari");
+        dosen = new Dosen("nidn", "Mar i Adhari");
         dosen.getNama();
-        // dosen = new Dosen("aaaaaaaaaa", "Mar'i Adhari");
+        // dosen = new Dosen("aaaaaaaaaa", "Mar i Adhari");
     }
     public static void testCase4(){
         /**
@@ -60,6 +61,13 @@ public class DosenTest {
             *   Membuat instansiasi objek dengan parameter
             *   nama terdapat angka
             */
-            dosen = new Dosen("1234567890", "Mar'i 123");
+            dosen = new Dosen("1234567890", "Mar i 123");
+    }
+    public static void testCase6() {
+        /**
+         *  Membuat instansiasi objek dengan parameter
+         *  nama terdapat karakter selain huruf
+         */
+        dosen = new Dosen("1234567890", "Mar'i Adhari");
     }
 }

@@ -21,6 +21,25 @@ public abstract class Person {
             return;
         }
         String check;
+        String[] characters = {
+            "1", "2", "3", "4", "5",
+            "6", "7", "8", "9", "0",
+            "`", "~", "!", "@", "#",
+            "$", "%", "^", "&", "*",
+            "(", ")", "-", "_", "=",
+            "+", "{", "[", "]", "}",
+            "|", ";", ":", "'", ",",
+            "<", ".", ">", "/", "?"
+        };
+        for (int i = 0; i < nama.length()-1; i++) {
+            check = nama.substring(i, i+1);
+            for (int j = 0; j < 40; j++) {
+                if (check.compareTo(characters[j]) == 0) {
+                    System.out.println("Nama tidak boleh terdapat karakter selain huruf");
+                    return;
+                }
+            }
+        }
         boolean failed = false;
         for (int i = 0; i < nama.length()-1; i++) {
             check = nama.substring(i, i+1);
